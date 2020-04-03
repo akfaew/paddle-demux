@@ -11,6 +11,6 @@ This tool doesn't validate the payload, it's up to your app to do that.
 ## Setup
 - [Create a new Google AppEngine project](https://console.cloud.google.com/projectcreate), let's call it `your_project`.
 - Edit `main.go` and enter your webhook URLs along with their matching Plan IDs. You can find your Plan IDs [here](https://vendors.paddle.com/subscriptions/plans).
-- Edit the `Makefile` and set `PROJECT` to `your_project`.`
+- Edit the `Makefile` and set `PROJECT` to `your_project`.
 - Type `make deploy`.
 - [Tell Paddle](https://vendors.paddle.com/alerts-webhooks) to send webhooks to `https://your_project.appspot.com/your_webhook_path`.
